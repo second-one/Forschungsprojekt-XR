@@ -7,38 +7,58 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Buffet.1
-    second: {fileID: 2100000, guid: 141bc7b5373b019469bc304406fc2cfd, type: 2}
+      name: Buffet.2
+    second: {fileID: 2100000, guid: d54d4f88822567542aa4f3ad43258996, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: BuffetNormal
-    second: {fileID: 2800000, guid: e6ffbf92c3e9ae94db98ac94800abf21, type: 3}
+    second: {fileID: 2800000, guid: 8833bb207f1cf7f409a020524c463185, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: BuffetSurface_Color
-    second: {fileID: 2800000, guid: a9ea7264aac0bed49bea87c034b804ab, type: 3}
+    second: {fileID: 2800000, guid: 1e8c279437f119b489f8bfecc567c314, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: StuhlNormal
-    second: {fileID: 2800000, guid: 9818f9f3a22e5864eaaf96ed2780c833, type: 3}
+    second: {fileID: 2800000, guid: 89e06f2c6d72b8a4d9e02c4ce52245ce, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: StuhlSurface_Color
-    second: {fileID: 2800000, guid: 394db372955b2804c89aceeb44a7b383, type: 3}
+    second: {fileID: 2800000, guid: 7137fc9913b6fcd40bf343ce23cad457, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TellerNormal
+    second: {fileID: 2800000, guid: dee9749c21edd5241a7540c12905f3a5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TellerSurface_Color
+    second: {fileID: 2800000, guid: 8ecc9210ea2604d4485bb60d9c383a78, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TischNormal
-    second: {fileID: 2800000, guid: 36e21d192ecf4164681ca512fede3e08, type: 3}
+    second: {fileID: 2800000, guid: 942b0bdb6580f724bac4042c490923c5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: TischSurface_Color
-    second: {fileID: 2800000, guid: 3600128b033990b43b5b2dee97f16c71, type: 3}
+    second: {fileID: 2800000, guid: e94ee2c9d2d7dea40b736975f7cb03cd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TischdeckeNormal
+    second: {fileID: 2800000, guid: d2f05ec10d05c124aa1f6271090f70a6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: TischdeckeSurface_Color
+    second: {fileID: 2800000, guid: 14eeab546fb9c1849afe0baf810c1d53, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
