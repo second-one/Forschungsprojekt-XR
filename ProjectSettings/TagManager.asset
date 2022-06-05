@@ -6,11 +6,7 @@ TagManager:
   tags:
   - Food
   - Copy
-  - PumkingSoup
-  - FriesFork
-  - AsparagusFork
-  - SteakFork
-  - Quark
+  - FoodCutlery
   layers:
   - Default
   - TransparentFX
