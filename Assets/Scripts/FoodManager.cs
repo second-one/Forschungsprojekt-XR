@@ -29,7 +29,7 @@ public class FoodManager : MonoBehaviour
         
         var foodCopy = Instantiate(foodToSpawn[index], new Vector3(
             transform.position.x, 
-            2.2f, 
+            transform.position.y, 
             transform.position.z),
             transform.rotation);
 
