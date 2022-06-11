@@ -15,22 +15,12 @@ public class FoodManager : MonoBehaviour
 
     private bool isSpawning = false;
     private GameObject cutleryCopy;
-   /* public CutleryManager cutleryObject;*/
-
-/*  public GameObject rightHandModel;
-    public ActionBasedController controllerManager;
-    private SwitchToCutlery changeModel; */
-
-/*  private void Start() { controllerManager = rightHandModel.GetComponent<ActionBasedController>(); } */
-
     
     public void SpawnFoodSource (int index) 
     {
         isSpawning = true;
         rayInteractor.keepSelectedTargetValid = false;
         DestroyFood();
-        /*cutleryObject.DestroyCutlery();*/
-
         
         var foodCopy = Instantiate(foodToSpawn[index], new Vector3(
             transform.position.x, 
@@ -51,22 +41,10 @@ public class FoodManager : MonoBehaviour
                 cutleryPosition.transform.position.z),
                 cutleryPosition.transform.rotation);
         }
-
-        
+    
         existingFood = foodCopy.AddComponent<Food>();
-
-
-
-        /*      controllerManager.modelPrefab = changeModel.controllerModel;
-                print(controllerManager.modelPrefab);*/
         isSpawning = false;
     }
-  
-/*    foodCopy.tag = "Copy";
-      foreach (Transform t in foodCopy.transform)
-      {
-      t.gameObject.tag = "Copy";
-      }*/  
 
     public void DestroyFood() 
     {

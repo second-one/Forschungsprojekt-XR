@@ -40,8 +40,16 @@ public class FoodProgress : MonoBehaviour
     {
         if (other != null && circleFill.fillAmount == 0)
         {
-            Destroy(other.gameObject);
-            resetCircle();
+            if (other.transform.root != other.transform)
+            {
+                Destroy(other.transform.parent.gameObject);
+                resetCircle();
+            }
+            else
+            {
+                Destroy(other.gameObject);
+                resetCircle();
+            }
         }
     }
 
