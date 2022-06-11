@@ -9,7 +9,7 @@ public class FoodProgress : MonoBehaviour
     public Image circleFill;
 
     private float fillTime = 1;
-    private float decreaseTime = 0.5f;
+    private float decreaseTime = 0.33f;
     private bool readyToFill = false;
 
 
@@ -27,7 +27,24 @@ public class FoodProgress : MonoBehaviour
         circleFill.fillAmount = fillTime;
         fillTime -= decreaseTime * Time.deltaTime;
     }
-    
+
+    void resetCircle()
+    {
+        readyToFill = false;
+        fillTime = 1;
+        circleFill.fillAmount = fillTime;
+        ProgressUI.gameObject.SetActive(false);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other != null && circleFill.fillAmount == 0)
+        {
+            Destroy(other.gameObject);
+            resetCircle();
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         readyToFill = true; 
@@ -35,9 +52,6 @@ public class FoodProgress : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        readyToFill = false;
-        fillTime = 1;
-        circleFill.fillAmount = fillTime;
-        ProgressUI.gameObject.SetActive(false);
+        resetCircle();
     }
 }
