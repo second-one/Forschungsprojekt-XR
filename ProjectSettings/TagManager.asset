@@ -7,6 +7,7 @@ TagManager:
   - Food
   - Copy
   - FoodCutlery
+  - Cutlery
   layers:
   - Default
   - TransparentFX

@@ -15,9 +15,11 @@ public class FoodManager : MonoBehaviour
 
     private bool isSpawning = false;
     private GameObject cutleryCopy;
+    private int foodIndex;
     
     public void SpawnFoodSource (int index) 
     {
+        foodIndex = index;
         isSpawning = true;
         rayInteractor.keepSelectedTargetValid = false;
         DestroyFood();
@@ -40,6 +42,7 @@ public class FoodManager : MonoBehaviour
                 cutleryPosition.transform.position.y,
                 cutleryPosition.transform.position.z),
                 cutleryPosition.transform.rotation);
+            cutleryCopy.tag = "Cutlery";
         }
     
         existingFood = foodCopy.AddComponent<Food>();
