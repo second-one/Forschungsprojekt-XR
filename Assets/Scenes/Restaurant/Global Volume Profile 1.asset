@@ -15,6 +15,35 @@ MonoBehaviour:
   components:
   - {fileID: 4230937514331306072}
   - {fileID: 4871280523966958347}
+  - {fileID: 3437481395934499369}
+--- !u!114 &3437481395934499369
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 0
+    m_Value: 0.26
+  contrast:
+    m_OverrideState: 1
+    m_Value: 15
+  colorFilter:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 0
+    m_Value: -8
+  saturation:
+    m_OverrideState: 0
+    m_Value: 14.7
 --- !u!114 &4230937514331306072
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -57,8 +86,8 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 0
           value: 0
-          inSlope: 1.2903352
-          outSlope: 1.2903352
+          inSlope: 1.5073786
+          outSlope: 1.5073786
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
@@ -66,8 +95,8 @@ MonoBehaviour:
         - serializedVersion: 3
           time: 1
           value: 1
-          inSlope: 0.5083871
-          outSlope: 0.5083871
+          inSlope: 0.6452995
+          outSlope: 0.6452995
           tangentMode: 0
           weightedMode: 0
           inWeight: 0
