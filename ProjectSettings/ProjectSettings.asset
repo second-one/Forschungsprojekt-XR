@@ -12,13 +12,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-<<<<<<< HEAD
   companyName: DefaultCompany
   productName: Forschungsprojekt_XR_2022
-=======
-  companyName: RiemannGebauerFranke
-  productName: ForschungsprojektXR2022
->>>>>>> aef9b366b5d8d4fbb914e25226aa4a93fd1e9e67
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -158,7 +153,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-<<<<<<< HEAD
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -168,8 +162,6 @@ PlayerSettings:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-=======
->>>>>>> aef9b366b5d8d4fbb914e25226aa4a93fd1e9e67
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -189,11 +181,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-<<<<<<< HEAD
     Android: com.DefaultCompany.Forschungsprojekt_XR_2022
-=======
-    Android: com.RiemannGebauerFranke.ForschungsprojektXR2022
->>>>>>> aef9b366b5d8d4fbb914e25226aa4a93fd1e9e67
     Standalone: com.UnityTechnologies.com.unity.template-starter-kit
   buildNumber:
     Standalone: 0
