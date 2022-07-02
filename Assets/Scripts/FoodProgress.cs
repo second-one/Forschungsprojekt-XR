@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FoodProgress : MonoBehaviour
 {
-    public Image ProgressUI;
+    public Image progressUI;
     public Image circleFill;
 
     private float fillTime = 1;
@@ -23,17 +23,17 @@ public class FoodProgress : MonoBehaviour
 
     void FillCircle()
     {
-        ProgressUI.gameObject.SetActive(true);
+        progressUI.gameObject.SetActive(true);
         circleFill.fillAmount = fillTime;
         fillTime -= decreaseTime * Time.deltaTime;
     }
 
-    void resetCircle()
+    void ResetCircle()
     {
         readyToFill = false;
         fillTime = 1;
         circleFill.fillAmount = fillTime;
-        ProgressUI.gameObject.SetActive(false);
+        progressUI.gameObject.SetActive(false);
     }
 
     private void OnTriggerStay(Collider other)
@@ -43,12 +43,12 @@ public class FoodProgress : MonoBehaviour
             if (other.transform.root != other.transform)
             {
                 Destroy(other.transform.parent.gameObject);
-                resetCircle();
+                ResetCircle();
             }
             else
             {
                 Destroy(other.gameObject);
-                resetCircle();
+                ResetCircle();
             }
         }
     }
@@ -60,6 +60,6 @@ public class FoodProgress : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        resetCircle();
+        ResetCircle();
     }
 }
